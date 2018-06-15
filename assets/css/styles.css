@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -57,15 +60,12 @@ p {
 code {
     display: block;
     text-align: left;
-    white-space: pre;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
     line-height: 1.5;
     background-color: #eeeeee;
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
+    white-space: pre;
 }
 
 @media (max-width: 798px) {
@@ -93,5 +93,14 @@ code {
     }
     ul li {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    code {
+        width: 100%;
+        padding: 15px;
+        padding-right: 20px;
+        margin-left: -10px;
     }
 }
